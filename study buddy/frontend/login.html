@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - StudyBuddy AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" href="index.html">
+                <i class="fa-solid fa-graduation-cap text-primary"></i>
+                <span>Study<span class="gradient-text">Buddy AI</span></span>
+            </a>
+            <span class="badge-school d-none d-sm-inline-flex">
+                <i class="fa-solid fa-star text-warning"></i> School Learning Portal
+            </span>
+        </div>
+    </nav>
+
+    <!-- Login Auth Container -->
+    <div class="auth-wrapper">
+        <div class="glass-card auth-card">
+            <div class="auth-header">
+                <div class="auth-avatar-badge text-primary">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <h3 class="fw-bold mb-1">Welcome Back! 👋</h3>
+                <p class="text-secondary small">Ready to continue your learning adventure today?</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label"><i class="fa-solid fa-envelope me-1 text-info"></i> Email Address</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-dark border-secondary border-opacity-25 text-secondary"><i class="fa-solid fa-at"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="student@school.edu" required>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="form-label"><i class="fa-solid fa-lock me-1 text-warning"></i> Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-dark border-secondary border-opacity-25 text-secondary"><i class="fa-solid fa-key"></i></span>
+                        <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary-gradient w-100 mb-3 py-3">
+                    Login to StudyBuddy <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                </button>
+
+                <div class="text-center text-secondary small">
+                    New student? <a href="register.html" class="text-info fw-bold text-decoration-none">Create Account Here 🚀</a>
+                </div>
+
+                <div class="auth-illustration-footer">
+                    <span title="Mathematics">📐</span>
+                    <span title="Science">🔬</span>
+                    <span title="Textbooks">📚</span>
+                    <span title="Achievements">🏆</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
+
